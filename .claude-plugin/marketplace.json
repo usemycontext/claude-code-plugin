@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "usemycontext",
+  "description": "The UseMyContext plugin for Claude Code - your context follows you into the terminal.",
+  "owner": {
+    "name": "UseMyContext",
+    "url": "https://usemycontext.ai"
+  },
+  "plugins": [
+    {
+      "name": "usemycontext",
+      "source": "./usemycontext",
+      "description": "Read your UseMyContext profile in Claude Code over MCP, and map each folder to the right context.",
+      "category": "context",
+      "keywords": ["context", "mcp", "memory", "profile", "usemycontext"],
+      "author": {
+        "name": "UseMyContext",
+        "url": "https://usemycontext.ai"
+      },
+      "homepage": "https://usemycontext.ai"
+    }
+  ]
+}
