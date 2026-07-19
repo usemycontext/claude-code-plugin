@@ -7,7 +7,8 @@ description: Manage how this folder connects to UseMyContext. Use when the user 
 
 UseMyContext (usemycontext.ai) hosts your personal context and serves it to any AI client over MCP.
 This plugin registers the UseMyContext MCP server, so once you sign in, Claude Code can read your
-profile, list and open your files, and answer from your documents. Everything is read-only and audited.
+profile, list and open your files, and answer from your documents. Everything is read-only against your
+files and audited.
 
 Each of your UseMyContext projects has its own context and its own `@handle`. This skill lets you map a
 folder to one project, so a work repo reads your work profile and a side project reads your personal one.
@@ -52,7 +53,10 @@ then selects the project for that folder:
 
 - On every UseMyContext MCP tool call, include the argument `projectId="<the .umc projectId>"`. The tools
   are `profile`, `list_files`, `search_files`, `get_file`, `ask_docs`, `query_table`, and `suggest_update`
-  (in Claude Code they appear as `mcp__plugin_usemycontext_usemycontext__<tool>`).
+  (in Claude Code they appear as `mcp__plugin_usemycontext_usemycontext__<tool>`). One tool,
+  `suggest_update`, can write: it files a pending suggestion that you review and approve in the web app.
+  Nothing the AI does ever edits your profile or your files directly, and every read is logged to your
+  audit trail.
 - The UseMyContext server verifies the `projectId` is one of your own projects and scopes the read to it.
   If the `projectId` is not yours it refuses; if it is missing it falls back to your active project.
 - The plugin's SessionStart hook reads `.umc` and reminds the session of this rule automatically, so a new
@@ -74,6 +78,6 @@ usemycontext.ai first.
 
 ## The boundary, stated plainly
 
-This plugin scopes your CONTEXT per folder, that is, which UseMyContext profile the AI reads. It does not
+This plugin scopes your context per folder, that is, which UseMyContext profile the AI reads. It does not
 change your Anthropic account, your Claude Code login, your billing, or which model runs. Keeping separate
 Anthropic accounts or usage per folder is a different thing and is not what this does.
