@@ -1,6 +1,6 @@
 # UseMyContext for Claude Code
 
-[MIT license](./LICENSE) | [usemycontext.ai](https://usemycontext.ai) | [`usemycontext` SDK on npm](https://www.npmjs.com/package/usemycontext)
+[MIT license](./LICENSE) | [usemycontext.ai](https://usemycontext.ai) | [Docs](https://usemycontext.ai/docs) | [`usemycontext` SDK on npm](https://www.npmjs.com/package/usemycontext)
 
 UseMyContext is the personal context layer for AI. You keep one profile of who you are and what you are
 working on, and any AI client reads it over MCP. This plugin brings that into the terminal: sign in once
@@ -43,6 +43,13 @@ Sign-in is OAuth in the browser; no token is written to any file. This repo is a
 marketplace, which is why the install is two commands. The second command is `plugin@marketplace`;
 both happen to be named `usemycontext`. Full reference docs, including the `.umc` format and the two
 connection modes, are in [`usemycontext/README.md`](./usemycontext/README.md).
+
+## Try it in 30 seconds
+
+**No signup needed.** At the browser sign-in, use `demo@usemycontext.ai` with code `424242`
+(fixed - no email access needed). A shared, read-only demo account with a full profile, files, and a
+shared context. Then ask Claude Code "what do you know about me?". Docs:
+[usemycontext.ai/docs](https://usemycontext.ai/docs)
 
 ## Disconnecting and revoking
 

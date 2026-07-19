@@ -16,6 +16,10 @@ your files and audited.
 Then run `/mcp`, select `usemycontext`, and complete the browser sign-in (OAuth, no token stored in any
 file). No account yet? Create a free one at [usemycontext.ai](https://usemycontext.ai) first.
 
+**Try it in 30 seconds - no signup.** Sign in as `demo@usemycontext.ai` with code `424242` (fixed - no
+email access needed). A shared, read-only demo account with a full profile, files, and a shared context.
+Docs: [usemycontext.ai/docs](https://usemycontext.ai/docs)
+
 ## The `.umc` file
 
 Each UseMyContext project has its own context and its own `@handle`. To bind a folder to a project, drop a
@@ -88,6 +92,7 @@ locally.
 ## Links
 
 - Start here: the [repo README](../README.md)
+- Docs: [usemycontext.ai/docs](https://usemycontext.ai/docs)
 - Web app: [usemycontext.ai](https://usemycontext.ai)
 - MCP endpoint: `https://mcp.usemycontext.ai/mcp`
 - Example folder mapping: [`.umc.example`](./.umc.example)

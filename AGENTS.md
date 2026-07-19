@@ -35,6 +35,12 @@ claude mcp add --transport http usemycontext https://mcp.usemycontext.ai/mcp
 A UseMyContext account at usemycontext.ai is required; the free tier is enough. If the user has no
 account, send them to https://usemycontext.ai first.
 
+## Demo account for testing
+
+**Try it in 30 seconds - no signup.** Sign in as `demo@usemycontext.ai` with code `424242`
+(fixed - no email access needed). A shared, read-only demo account with a full profile, files, and a
+shared context. Docs: https://usemycontext.ai/docs
+
 ## Folder mapping (.umc)
 
 A `.umc` file in a repo root maps that folder to one UseMyContext project. Every session started in
