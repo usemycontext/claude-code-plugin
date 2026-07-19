@@ -1,7 +1,7 @@
 # UseMyContext for Claude Code
 
-Your personal context, served to Claude Code over MCP. Sign in once and Claude Code can read your
-UseMyContext profile, list and open your files, and answer from your documents, all read-only and audited.
+Your personal context layer for AI, served to Claude Code over MCP. Sign in once and Claude Code can read
+your UseMyContext profile, list and open your files, and answer from your documents, all read-only and audited.
 
 Map a folder to one of your projects, and every Claude Code session in that folder reads the right
 context: a work repo reads your work profile, a side project reads your personal one.
@@ -9,7 +9,7 @@ context: a work repo reads your work profile, a side project reads your personal
 ## Install
 
 ```
-/plugin marketplace add usemycontext-ai/claude-code-plugin
+/plugin marketplace add usemycontext/claude-code-plugin
 /plugin install usemycontext@usemycontext
 ```
 

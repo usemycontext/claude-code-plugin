@@ -2,14 +2,14 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "usemycontext",
   "displayName": "UseMyContext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Your personal context, served to Claude Code over MCP. Map each folder to one of your @handle profiles so every session in that folder reads the right context.",
   "author": {
     "name": "UseMyContext",
     "url": "https://usemycontext.ai"
   },
   "homepage": "https://usemycontext.ai",
-  "repository": "https://github.com/usemycontext-ai/claude-code-plugin",
+  "repository": "https://github.com/usemycontext/claude-code-plugin",
   "license": "MIT",
-  "keywords": ["context", "mcp", "memory", "profile", "usemycontext", "personal-context"]
+  "keywords": ["context", "mcp", "memory", "profile", "usemycontext", "personal-context", "context-layer"]
 }
