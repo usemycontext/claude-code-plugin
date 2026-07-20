@@ -63,7 +63,7 @@ eight tools:
 | `shared_context` | Read contexts others shared with you |
 
 One tool, `suggest_update`, can write: it files a pending suggestion that you review and approve in the
-web app. Nothing the AI does ever edits your profile or your files directly, and every read is logged to
+web app. Nothing the AI does ever edits your profile or your files directly, and every access leaves a record in
 your audit trail.
 
 Also bundled: the `/umc` skill to check, set, or change which UseMyContext profile a folder reads, and a
@@ -85,7 +85,7 @@ locally.
   project.
 - Writes: nothing to your files. The one write tool, `suggest_update`, files a pending suggestion that
   you review and approve in the web app.
-- Every read is logged to your audit trail.
+- Every access leaves a record in your audit trail.
 - You can revoke access at any time, from `/mcp` or from the web app's Connect page.
 - It does not change your Anthropic account, your Claude Code login, your billing, or which model runs.
 

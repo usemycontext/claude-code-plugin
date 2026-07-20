@@ -55,7 +55,7 @@ then selects the project for that folder:
   are `profile`, `list_files`, `search_files`, `get_file`, `ask_docs`, `query_table`, and `suggest_update`
   (in Claude Code they appear as `mcp__plugin_usemycontext_usemycontext__<tool>`). One tool,
   `suggest_update`, can write: it files a pending suggestion that you review and approve in the web app.
-  Nothing the AI does ever edits your profile or your files directly, and every read is logged to your
+  Nothing the AI does ever edits your profile or your files directly, and every access leaves a record in your
   audit trail.
 - The UseMyContext server verifies the `projectId` is one of your own projects and scopes the read to it.
   If the `projectId` is not yours it refuses; if it is missing it falls back to your active project.

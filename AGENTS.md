@@ -60,7 +60,7 @@ The `/umc` skill checks or changes a folder's mapping.
 - Eight MCP tools, all read-only against the user's files.
 - One tool, `suggest_update`, can write: it files a pending suggestion that the user reviews and
   approves in the web app. Nothing the AI does ever edits the profile or files directly.
-- Every read is logged to the user's audit trail.
+- Every access leaves a record in the user's audit trail.
 - Revoke any time: `/mcp` in Claude Code, or the Connect page in the web app (server-enforced,
   immediate).
 - The plugin never uploads repo code or files; only the local `.umc` marker is read.
